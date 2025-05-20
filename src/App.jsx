@@ -3,8 +3,23 @@ import { Home, Dashboard, Register, Login, NotFound } from "./pages/index";
 import AuthLayout from "./layouts/AuthLayout";
 import MainLayout from "./layouts/MainLayout";
 import PrivateRoutes from "./routes/PrivateRoutes";
+import { useEffect, useState } from "react";
 
 const App = () => {
+  const [data, setData] = useState(null);
+
+  useEffect(() => {
+    let token = localStorage.getItem("token");
+
+    if (!token) {
+      token = crypto.randomUUID();
+      localStorage.setItem("token", token);
+    }
+    setData(token);
+  }, []);
+
+  // console.log(data);
+
   return (
     <>
       <BrowserRouter>
