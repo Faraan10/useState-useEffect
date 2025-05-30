@@ -4,6 +4,7 @@ import AuthLayout from "./layouts/AuthLayout";
 import MainLayout from "./layouts/MainLayout";
 import PrivateRoutes from "./routes/PrivateRoutes";
 import { useEffect, useState } from "react";
+import "./App.css";
 
 const App = () => {
   const [data, setData] = useState(null);
