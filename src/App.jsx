@@ -1,5 +1,12 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import { Home, Dashboard, Register, Login, NotFound } from "./pages/index";
+import {
+  Home,
+  Dashboard,
+  Register,
+  Login,
+  Cart,
+  NotFound,
+} from "./pages/index";
 import AuthLayout from "./layouts/AuthLayout";
 import MainLayout from "./layouts/MainLayout";
 import PrivateRoutes from "./routes/PrivateRoutes";
@@ -27,6 +34,7 @@ const App = () => {
         <Routes>
           <Route element={<MainLayout />}>
             <Route path="/" element={<Home />} />
+            <Route path="/cart" element={<Cart />} />
             <Route path="*" element={<NotFound />} />
           </Route>
 
