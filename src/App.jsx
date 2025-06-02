@@ -5,6 +5,7 @@ import {
   Register,
   Login,
   Cart,
+  Settings,
   NotFound,
 } from "./pages/index";
 import AuthLayout from "./layouts/AuthLayout";
@@ -45,6 +46,7 @@ const App = () => {
 
           <Route element={<PrivateRoutes />}>
             <Route path="/dashboard" element={<Dashboard />} />
+            <Route path="/settings" element={<Settings />} />
           </Route>
         </Routes>
       </BrowserRouter>
