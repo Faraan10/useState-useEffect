@@ -4,6 +4,7 @@ import {
   Dashboard,
   Register,
   Login,
+  Products,
   Cart,
   Settings,
   NotFound,
@@ -35,6 +36,7 @@ const App = () => {
         <Routes>
           <Route element={<MainLayout />}>
             <Route path="/" element={<Home />} />
+            <Route path="/products" element={<Products />} />
             <Route path="/cart" element={<Cart />} />
             <Route path="*" element={<NotFound />} />
           </Route>
