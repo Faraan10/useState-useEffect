@@ -1,7 +1,59 @@
 import React from "react";
 
+const products = [
+  {
+    id: 1,
+    name: "Wireless Headphones",
+    price: 59.99,
+    image: "https://via.placeholder.com/200",
+  },
+  {
+    id: 2,
+    name: "Smart Watch",
+    price: 89.99,
+    image: "https://via.placeholder.com/200",
+  },
+  {
+    id: 3,
+    name: "Bluetooth Speaker",
+    price: 39.99,
+    image: "https://via.placeholder.com/200",
+  },
+  {
+    id: 4,
+    name: "Fitness Tracker",
+    price: 49.99,
+    image: "https://via.placeholder.com/200",
+  },
+];
+
 const Products = () => {
-  return <div>Products</div>;
+  return (
+    <div className="min-h-screen bg-base-200 py-10 px-4">
+      <h2 className="text-3xl font-bold text-center mb-8">Our Products</h2>
+
+      <div className="grid gap-6 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 max-w-6xl mx-auto">
+        {products.map((product) => (
+          <div key={product.id} className="card bg-base-100 shadow-xl">
+            <figure>
+              <img
+                src={product.image}
+                alt={product.name}
+                className="h-48 w-full object-cover"
+              />
+            </figure>
+            <div className="card-body">
+              <h3 className="card-title">{product.name}</h3>
+              <p className="text-base">${product.price.toFixed(2)}</p>
+              <div className="card-actions justify-end">
+                <button className="btn btn-primary btn-sm">Add to Cart</button>
+              </div>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  );
 };
 
 export default Products;
