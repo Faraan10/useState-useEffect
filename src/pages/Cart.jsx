@@ -1,5 +1,3 @@
-import React from "react";
-
 const cartItems = [
   {
     id: 1,
