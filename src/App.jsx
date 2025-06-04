@@ -28,8 +28,6 @@ const App = () => {
     setData(token);
   }, []);
 
-  // console.log(data);
-
   return (
     <>
       <BrowserRouter>
