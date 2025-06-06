@@ -6,11 +6,7 @@ const Home = () => {
     <div className="min-h-screen flex items-center justify-center bg-base-200 px-4">
       <div className="hero-content flex-col lg:flex-row-reverse gap-12">
         {/* Hero Image */}
-        <img
-          src="https://images.unsplash.com/photo-1606813902527-1b60f4d8d3fa?auto=format&fit=crop&w=600&q=80"
-          className="max-w-sm rounded-lg shadow-2xl"
-          alt="Shopping"
-        />
+        <img src="" className="max-w-sm rounded-lg shadow-2xl" alt="Shopping" />
 
         {/* Text Section */}
         <div className="text-center lg:text-left">
