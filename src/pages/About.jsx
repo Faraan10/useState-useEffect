@@ -6,7 +6,7 @@ const About = () => {
       <div className="max-w-3xl bg-base-100 p-8 rounded-2xl shadow-xl">
         <h1 className="text-4xl font-bold text-primary mb-4">About Us</h1>
         <p className="text-base-content leading-relaxed">
-          Welcome to{" "}
+          Welcome to
           <span className="font-semibold text-secondary">YourStore</span>! We
           are passionate about delivering the best products to your doorstep
           quickly and securely. Whether you're shopping for the latest gadgets,
