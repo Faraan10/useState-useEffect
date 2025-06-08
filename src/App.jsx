@@ -41,7 +41,7 @@ const App = () => {
     <>
       <BrowserRouter>
         <Routes>
-          <Route element={<MainLayout items={items} />}>
+          <Route element={<MainLayout cart={cart} />}>
             <Route path="/" element={<Home />} />
             <Route
               path="/products"
