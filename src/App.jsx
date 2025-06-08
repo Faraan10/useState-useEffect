@@ -13,10 +13,12 @@ import AuthLayout from "./layouts/AuthLayout";
 import MainLayout from "./layouts/MainLayout";
 import PrivateRoutes from "./routes/PrivateRoutes";
 import { useEffect, useState } from "react";
+import demoData from "../data.json";
 import "./App.css";
 
 const App = () => {
   const [data, setData] = useState(null);
+  console.log(demoData);
 
   useEffect(() => {
     let token = localStorage.getItem("token");
