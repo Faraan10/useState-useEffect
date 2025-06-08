@@ -35,6 +35,7 @@ const App = () => {
   const addItems = (newData) => {
     setCart((prevItems) => [...prevItems, newData]);
   };
+  console.log(cart);
 
   return (
     <>
