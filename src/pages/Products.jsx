@@ -10,7 +10,7 @@ const Products = ({ items, setItems }) => {
               <img
                 src={product.image}
                 alt={product.name}
-                className="h-48 w-full object-cover"
+                className="h-48 w-full "
               />
             </figure>
             <div className="card-body">
