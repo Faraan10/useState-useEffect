@@ -1,37 +1,10 @@
-const products = [
-  {
-    id: 1,
-    name: "Wireless Headphones",
-    price: 59.99,
-    image: "https://via.placeholder.com/200",
-  },
-  {
-    id: 2,
-    name: "Smart Watch",
-    price: 89.99,
-    image: "https://via.placeholder.com/200",
-  },
-  {
-    id: 3,
-    name: "Bluetooth Speaker",
-    price: 39.99,
-    image: "https://via.placeholder.com/200",
-  },
-  {
-    id: 4,
-    name: "Fitness Tracker",
-    price: 49.99,
-    image: "https://via.placeholder.com/200",
-  },
-];
-
-const Products = () => {
+const Products = ({ items, setItems }) => {
   return (
     <div className="min-h-screen bg-base-200 py-10 px-4">
       <h2 className="text-3xl font-bold text-center mb-8">Our Products</h2>
 
       <div className="grid gap-6 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 max-w-6xl mx-auto">
-        {products.map((product) => (
+        {items.map((product) => (
           <div key={product.id} className="card bg-base-100 shadow-xl">
             <figure>
               <img
