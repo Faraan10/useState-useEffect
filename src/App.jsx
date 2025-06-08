@@ -31,6 +31,10 @@ const App = () => {
     setData(token);
   }, []);
 
+  const addItems = (newData) => {
+    setItems((prevItems) => [...prevItems, newData]);
+  };
+
   return (
     <>
       <BrowserRouter>
@@ -39,7 +43,7 @@ const App = () => {
             <Route path="/" element={<Home />} />
             <Route
               path="/products"
-              element={<Products items={items} setItems={setItems} />}
+              element={<Products items={items} addItems={addItems} />}
             />
             <Route
               path="/cart"
