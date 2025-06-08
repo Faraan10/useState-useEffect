@@ -18,6 +18,7 @@ import "./App.css";
 
 const App = () => {
   const [data, setData] = useState(null);
+  const [items, setItems] = useState(demoData);
   console.log(demoData);
 
   useEffect(() => {
@@ -36,7 +37,10 @@ const App = () => {
         <Routes>
           <Route element={<MainLayout />}>
             <Route path="/" element={<Home />} />
-            <Route path="/products" element={<Products />} />
+            <Route
+              path="/products"
+              element={<Products items={items} setItems={setItems} />}
+            />
             <Route path="/cart" element={<Cart />} />
             <Route path="*" element={<NotFound />} />
           </Route>
