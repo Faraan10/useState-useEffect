@@ -19,7 +19,7 @@ const Products = ({ items, addItems }) => {
               <div className="card-actions justify-end">
                 <button
                   className="btn btn-primary btn-sm"
-                  onClick={() => addItems(product.id)}
+                  onClick={() => addItems(product)}
                 >
                   Add to Cart
                 </button>
