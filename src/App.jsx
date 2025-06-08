@@ -19,7 +19,8 @@ import "./App.css";
 const App = () => {
   const [data, setData] = useState(null);
   const [items, setItems] = useState(demoData);
-  console.log(demoData);
+  const [cart, setCart] = useState([]);
+  // console.log(demoData);
 
   useEffect(() => {
     let token = localStorage.getItem("token");
@@ -32,7 +33,7 @@ const App = () => {
   }, []);
 
   const addItems = (newData) => {
-    setItems((prevItems) => [...prevItems, newData]);
+    setCart((prevItems) => [...prevItems, newData]);
   };
 
   return (

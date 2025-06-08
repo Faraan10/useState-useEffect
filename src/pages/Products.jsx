@@ -1,4 +1,4 @@
-const Products = ({ items, setItems }) => {
+const Products = ({ items, addItems }) => {
   return (
     <div className="min-h-screen bg-base-200 py-10 px-4">
       <h2 className="text-3xl font-bold text-center mb-8">Our Products</h2>
@@ -17,7 +17,12 @@ const Products = ({ items, setItems }) => {
               <h3 className="card-title">{product.name}</h3>
               <p className="text-base">${product.price.toFixed(2)}</p>
               <div className="card-actions justify-end">
-                <button className="btn btn-primary btn-sm">Add to Cart</button>
+                <button
+                  className="btn btn-primary btn-sm"
+                  onClick={() => addItems(product.id)}
+                >
+                  Add to Cart
+                </button>
               </div>
             </div>
           </div>
