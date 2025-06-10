@@ -5,7 +5,11 @@ const Home = () => {
     <div className="min-h-screen flex items-center justify-center bg-base-200 px-4">
       <div className="hero-content flex-col lg:flex-row-reverse gap-12">
         {/* Hero Image */}
-        <img src="" className="max-w-sm rounded-lg shadow-2xl" alt="Shopping" />
+        <img
+          src="https://marketplace.canva.com/EAGR4J_-jYM/2/0/1600w/canva-colorful-abstract-online-shop-free-logo-zxo07UzxTDw.jpg"
+          className="max-w-sm rounded-lg shadow-2xl"
+          alt="Shopping"
+        />
 
         {/* Text Section */}
         <div className="text-center lg:text-left">
