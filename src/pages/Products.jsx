@@ -10,13 +10,14 @@ const Products = ({ items, addItems }) => {
               <img
                 src={product.image}
                 alt={product.name}
-                className="h-48 w-full "
+                className="h-48 w-40"
               />
             </figure>
             <div className="card-body">
               <h3 className="card-title">{product.name}</h3>
-              <p className="text-base">${product.price.toFixed(2)}</p>
               <div className="card-actions justify-end">
+                <p className="text-base">${product.price.toFixed(2)}</p>
+
                 <button
                   className="btn btn-primary btn-sm"
                   onClick={() => addItems(product)}
