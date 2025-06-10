@@ -4,9 +4,9 @@ const Navbar = ({ cart }) => {
   return (
     <div className="navbar container bg-base-100 shadow-sm">
       <div className="flex-1">
-        <a className="btn btn-ghost text-xl">
-          <Link to="/">Ecommerce Store</Link>
-        </a>
+        <Link className="btn btn-ghost text-xl" to="/">
+          Ecommerce Store
+        </Link>
       </div>
       <div className="flex-none">
         <div className="dropdown dropdown-end">
