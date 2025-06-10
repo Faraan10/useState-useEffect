@@ -33,9 +33,12 @@ const App = () => {
   }, []);
 
   const addItems = (newData) => {
+    const findItem = items.find((item) => item.id == newData.id);
+    console.log(findItem);
+
     setCart((prevItems) => [...prevItems, newData]);
   };
-  console.log(cart);
+  // console.log(cart);
 
   return (
     <>
