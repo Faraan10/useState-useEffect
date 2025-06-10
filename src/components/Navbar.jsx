@@ -1,8 +1,12 @@
+import { Link } from "react-router-dom";
+
 const Navbar = ({ cart }) => {
   return (
     <div className="navbar container bg-base-100 shadow-sm">
       <div className="flex-1">
-        <a className="btn btn-ghost text-xl">Ecommerce Store</a>
+        <a className="btn btn-ghost text-xl">
+          <Link to="/">Ecommerce Store</Link>
+        </a>
       </div>
       <div className="flex-none">
         <div className="dropdown dropdown-end">
@@ -36,7 +40,9 @@ const Navbar = ({ cart }) => {
               <span className="text-lg font-bold">{cart.length} Items</span>
               <span className="text-info">Subtotal: $999</span>
               <div className="card-actions">
-                <button className="btn btn-primary btn-block">View cart</button>
+                <button className="btn btn-primary btn-block">
+                  <Link to="/cart">View cart</Link>
+                </button>
               </div>
             </div>
           </div>
