@@ -1,8 +1,5 @@
 const Cart = ({ cart, setCart }) => {
-  // const total = items.reduce(
-  //   (sum, item) => sum + item.price * item.quantity,
-  //   0
-  // );
+  const total = cart.reduce((sum, item) => sum + item.price * item.quantity, 0);
 
   return (
     <div className="min-h-screen bg-base-200 py-10 px-4">
@@ -44,7 +41,7 @@ const Cart = ({ cart, setCart }) => {
           ))}
 
           <div className="text-right mt-6">
-            <h3 className="text-2xl font-bold">Total: </h3>
+            <h3 className="text-2xl font-bold">Total: {total.toFixed(2)}</h3>
             <button className="btn btn-primary mt-4">
               Proceed to Checkout
             </button>
