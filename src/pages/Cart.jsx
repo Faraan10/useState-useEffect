@@ -1,22 +1,5 @@
-const cartItems = [
-  {
-    id: 1,
-    name: "Wireless Headphones",
-    price: 59.99,
-    quantity: 2,
-    image: "https://via.placeholder.com/80",
-  },
-  {
-    id: 2,
-    name: "Smart Watch",
-    price: 89.99,
-    quantity: 1,
-    image: "https://via.placeholder.com/80",
-  },
-];
-
-const Cart = () => {
-  const total = cartItems.reduce(
+const Cart = ({ items, setItems }) => {
+  const total = items.reduce(
     (sum, item) => sum + item.price * item.quantity,
     0
   );
@@ -27,13 +10,13 @@ const Cart = () => {
         Your Shopping Cart
       </h2>
 
-      {cartItems.length === 0 ? (
+      {items.length === 0 ? (
         <div className="text-center text-lg text-base-content">
           Your cart is empty.
         </div>
       ) : (
         <div className="max-w-4xl mx-auto space-y-6">
-          {cartItems.map((item) => (
+          {items.map((item) => (
             <div
               key={item.id}
               className="flex items-center justify-between bg-base-100 p-4 rounded-xl shadow"
