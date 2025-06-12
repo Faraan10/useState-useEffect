@@ -1,4 +1,4 @@
-const Cart = ({ items, setItems }) => {
+const Cart = ({ cart, setCart }) => {
   // const total = items.reduce(
   //   (sum, item) => sum + item.price * item.quantity,
   //   0
@@ -10,13 +10,13 @@ const Cart = ({ items, setItems }) => {
         Your Shopping Cart
       </h2>
 
-      {items.length === 0 ? (
+      {cart.length === 0 ? (
         <div className="text-center text-lg text-base-content">
           Your cart is empty.
         </div>
       ) : (
         <div className="max-w-4xl mx-auto space-y-6">
-          {items.map((item) => (
+          {cart.map((item) => (
             <div
               key={item.id}
               className="flex items-center justify-between bg-base-100 p-4 rounded-xl shadow"
