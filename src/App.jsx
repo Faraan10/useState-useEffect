@@ -52,7 +52,7 @@ const App = () => {
             />
             <Route
               path="/cart"
-              element={<Cart items={items} setItems={setItems} />}
+              element={<Cart cart={cart} setCart={setCart} />}
             />
             <Route path="*" element={<NotFound />} />
           </Route>
