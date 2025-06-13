@@ -44,7 +44,7 @@ const Cart = ({ cart, deleteCart }) => {
           ))}
 
           <div className="text-right mt-6">
-            <h3 className="text-2xl font-bold">Total: {total.toFixed(2)}</h3>
+            <h3 className="text-2xl font-bold">Total: ${total.toFixed(2)}</h3>
             <button className="btn btn-primary mt-4">
               Proceed to Checkout
             </button>
