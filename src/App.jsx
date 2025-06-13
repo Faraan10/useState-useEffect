@@ -40,6 +40,10 @@ const App = () => {
   };
   // console.log(cart);
 
+  const deleteCart = (id) => {
+    setCart((prevItems) => prevItems.filter((item) => item.id != id));
+  };
+
   return (
     <>
       <BrowserRouter>
@@ -52,7 +56,7 @@ const App = () => {
             />
             <Route
               path="/cart"
-              element={<Cart cart={cart} setCart={setCart} />}
+              element={<Cart cart={cart} deleteCart={deleteCart} />}
             />
             <Route path="*" element={<NotFound />} />
           </Route>
