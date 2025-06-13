@@ -1,4 +1,4 @@
-const Cart = ({ cart, setCart }) => {
+const Cart = ({ cart, handleDelete }) => {
   const total = cart.reduce((sum, item) => sum + item.price * item.quantity, 0);
 
   return (
@@ -33,7 +33,10 @@ const Cart = ({ cart, setCart }) => {
               </div>
               <div className="flex items-center gap-6">
                 <p className="text-base-content">Qty: {item.quantity}</p>
-                <button className="btn btn-sm btn-outline btn-error">
+                <button
+                  className="btn btn-sm btn-outline btn-error"
+                  onClick={() => handleDelete(item.id)}
+                >
                   Remove
                 </button>
               </div>
