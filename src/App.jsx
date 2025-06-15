@@ -14,6 +14,8 @@ import MainLayout from "./layouts/MainLayout";
 import PrivateRoutes from "./routes/PrivateRoutes";
 import { useEffect, useState } from "react";
 import demoData from "../data.json";
+import toast from "react-hot-toast";
+
 import "./App.css";
 
 const App = () => {
@@ -37,6 +39,7 @@ const App = () => {
     console.log(findItem);
 
     setCart((prevItems) => [...prevItems, newData]);
+    toast.success("Item added to cart");
   };
   // console.log(cart);
 
