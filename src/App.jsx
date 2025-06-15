@@ -45,6 +45,7 @@ const App = () => {
 
   const deleteCart = (id) => {
     setCart((prevItems) => prevItems.filter((item) => item.id != id));
+    toast.error("Item removed from cart");
   };
 
   return (
