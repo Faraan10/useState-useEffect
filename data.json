@@ -4,21 +4,24 @@
     "title": "Sony wh-1000xm5 Wireless Headphones",
     "image": "https://m.media-amazon.com/images/I/51aXvjzcukL.jpg",
     "price": 359.99,
-    "quantity": 1
+    "quantity": 1,
+    "stock": 10
   },
   {
     "id": 2,
     "title": "Smart Watch",
     "image": "https://m.media-amazon.com/images/I/7168FPOetGL._AC_UF350,350_QL80_.jpg",
     "price": 250.99,
-    "quantity": 1
+    "quantity": 1,
+    "stock": 10
   },
   {
     "id": 3,
     "title": "Bose Speaker",
     "image": "https://m.media-amazon.com/images/I/71L9o0-0SML.jpg",
     "price": 350.99,
-    "quantity": 1
+    "quantity": 1,
+    "stock": 10
   },
   {
     "id": 4,
@@ -32,27 +35,31 @@
     "title": "Gaming Console",
     "image": "https://m.media-amazon.com/images/I/51ljnEaW0pL.jpg",
     "price": 450.99,
-    "quantity": 1
+    "quantity": 1,
+    "stock": 10
   },
   {
     "id": 6,
     "title": "Macbook pro",
     "image": "https://m.media-amazon.com/images/I/81p5n9MO4QL._AC_UF1000,1000_QL80_.jpg",
     "price": 2200.99,
-    "quantity": 1
+    "quantity": 1,
+    "stock": 10
   },
   {
     "id": 7,
     "title": "Asus ROG Strix",
     "image": "https://images-cdn.ubuy.co.in/633ab243ee02352c3f110aa9-asus-rog-strix-scar-15-gaming-laptop.jpg",
     "price": 1300,
-    "quantity": 1
+    "quantity": 1,
+    "stock": 10
   },
   {
     "id": 8,
     "title": "Sennheiser Momentum 4",
     "image": "https://rukminim2.flixcart.com/image/850/1000/xif0q/headphone/o/w/c/-original-imah4rkt9pabhu8b.jpeg?q=90&crop=false",
     "price": 320.99,
-    "quantity": 1
+    "quantity": 1,
+    "stock": 10
   }
 ]
