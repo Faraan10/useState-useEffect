@@ -66,13 +66,13 @@ const Navbar = ({ cart }) => {
             tabIndex={0}
             className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow"
           >
-            <li>
+            <li className="h-10">
               <Link to="/profile" className="justify-between">
                 Profile
                 <span className="badge">New</span>
               </Link>
             </li>
-            <li>
+            <li className="h-10">
               <Link to="/settings">Settings</Link>
             </li>
             <li className="items-center">
