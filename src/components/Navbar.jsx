@@ -75,8 +75,8 @@ const Navbar = ({ cart }) => {
             <li>
               <Link to="/settings">Settings</Link>
             </li>
-            <li>
-              <a>Logout</a>
+            <li className="items-center">
+              <button className="btn btn-primary w-20">Logout</button>
             </li>
           </ul>
         </div>
