@@ -40,9 +40,11 @@ const Navbar = ({ cart }) => {
               <span className="text-lg font-bold">{cart.length} Items</span>
               <span className="text-info">Subtotal: $999</span>
               <div className="card-actions">
-                <button className="btn btn-primary btn-block">
-                  <Link to="/cart">View cart</Link>
-                </button>
+                <Link to="/cart">
+                  <button className="btn btn-primary btn-block">
+                    View cart
+                  </button>
+                </Link>
               </div>
             </div>
           </div>
@@ -71,7 +73,7 @@ const Navbar = ({ cart }) => {
               </a>
             </li>
             <li>
-              <a>Settings</a>
+              <Link to="/settings">Settings</Link>
             </li>
             <li>
               <a>Logout</a>
