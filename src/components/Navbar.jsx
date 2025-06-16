@@ -69,7 +69,6 @@ const Navbar = ({ cart }) => {
             <li className="h-10">
               <Link to="/profile" className="justify-between">
                 Profile
-                <span className="badge">New</span>
               </Link>
             </li>
             <li className="h-10">
