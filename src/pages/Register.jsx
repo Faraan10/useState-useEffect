@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const Register = () => {
   return (
     <div className="min-h-screen flex items-center justify-center bg-base-200">
@@ -60,9 +62,9 @@ const Register = () => {
 
         <p className="text-center text-sm text-base-content">
           Already have an account?{" "}
-          <a href="#" className="link link-primary">
+          <Link to="/login" className="link link-primary">
             Login
-          </a>
+          </Link>
         </p>
       </div>
     </div>
