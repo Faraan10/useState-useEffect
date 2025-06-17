@@ -7,7 +7,12 @@ const Register = () => {
     email: "",
     password: "",
   });
-  console.log(data);
+  // console.log(data);
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    console.log(data);
+  };
 
   const handleChange = (e) => {
     setData({ ...data, [e.target.name]: e.target.value });
@@ -18,7 +23,7 @@ const Register = () => {
         <h2 className="text-3xl font-bold text-center text-primary">
           Register
         </h2>
-        <form className="space-y-4">
+        <form className="space-y-4" onSubmit={handleSubmit}>
           <div className="form-control">
             <label className="label">
               <span className="label-text">Name</span>
