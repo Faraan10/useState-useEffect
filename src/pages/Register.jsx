@@ -7,6 +7,10 @@ const Register = () => {
     email: "",
     password: "",
   });
+
+  const handleChange = (e) => {
+    setData({ ...data, [e.target.name]: e.target.value });
+  };
   return (
     <div className="min-h-screen flex items-center justify-center bg-base-200">
       <div className="w-full max-w-md p-8 space-y-6 bg-base-100 rounded-2xl shadow-lg">
@@ -23,6 +27,7 @@ const Register = () => {
               placeholder="Enter your name"
               className="input input-bordered w-full"
               required
+              onChange={handleChange}
             />
           </div>
 
