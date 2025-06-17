@@ -29,6 +29,7 @@ const Register = () => {
               className="input input-bordered w-full"
               required
               onChange={handleChange}
+              name="name"
             />
           </div>
 
@@ -42,6 +43,7 @@ const Register = () => {
               className="input input-bordered w-full"
               required
               onChange={handleChange}
+              name="email"
             />
           </div>
 
@@ -55,6 +57,7 @@ const Register = () => {
               className="input input-bordered w-full"
               required
               onChange={handleChange}
+              name="password"
             />
           </div>
 
