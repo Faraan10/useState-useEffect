@@ -8,9 +8,14 @@ const Register = () => {
     password: "",
   });
   // console.log(data);
+
+  const { name, email, password } = data;
   const handleSubmit = (e) => {
     e.preventDefault();
 
+    if (!name.trim() && !email.trim() && !password.trim()) {
+      return false;
+    }
     console.log(data);
   };
 
