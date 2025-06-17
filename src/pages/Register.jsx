@@ -7,6 +7,7 @@ const Register = () => {
     email: "",
     password: "",
   });
+  console.log(data);
 
   const handleChange = (e) => {
     setData({ ...data, [e.target.name]: e.target.value });
@@ -40,6 +41,7 @@ const Register = () => {
               placeholder="Enter your email"
               className="input input-bordered w-full"
               required
+              onChange={handleChange}
             />
           </div>
 
@@ -52,6 +54,7 @@ const Register = () => {
               placeholder="Create a password"
               className="input input-bordered w-full"
               required
+              onChange={handleChange}
             />
           </div>
 
