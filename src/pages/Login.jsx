@@ -14,7 +14,15 @@ const Login = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // console.log(data);
+
+    if (!email.trim() && !password.trim()) {
+      return;
+    }
+
+    setData({
+      email: "",
+      password: "",
+    });
   };
   const { email, password } = data;
   return (
