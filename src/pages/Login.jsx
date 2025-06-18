@@ -10,6 +10,7 @@ const Login = () => {
   const handleChange = (e) => {
     setData({ ...data, [e.target.name]: e.target.value });
   };
+  console.log(data);
 
   const { email, password } = data;
   return (
@@ -27,6 +28,7 @@ const Login = () => {
               className="input input-bordered w-full"
               required
               name="email"
+              value={email}
               onChange={handleChange}
             />
           </div>
@@ -41,6 +43,7 @@ const Login = () => {
               className="input input-bordered w-full"
               required
               name="password"
+              value={password}
               onChange={handleChange}
             />
             <label className="label">
