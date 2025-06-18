@@ -6,6 +6,8 @@ const Login = () => {
     email: "",
     password: "",
   });
+
+  const { email, password } = data;
   return (
     <div className="min-h-screen flex items-center justify-center bg-base-200">
       <div className="w-full max-w-md p-8 space-y-6 bg-base-100 rounded-2xl shadow-lg">
