@@ -7,6 +7,10 @@ const Login = () => {
     password: "",
   });
 
+  const handleChange = (e) => {
+    setData({ ...data, [e.target.name]: e.target.value });
+  };
+
   const { email, password } = data;
   return (
     <div className="min-h-screen flex items-center justify-center bg-base-200">
@@ -22,6 +26,8 @@ const Login = () => {
               placeholder="Enter your email"
               className="input input-bordered w-full"
               required
+              name="email"
+              onChange={handleChange}
             />
           </div>
 
@@ -34,6 +40,8 @@ const Login = () => {
               placeholder="Enter your password"
               className="input input-bordered w-full"
               required
+              name="password"
+              onChange={handleChange}
             />
             <label className="label">
               <a href="#" className="label-text-alt link link-hover">
