@@ -10,7 +10,6 @@ const Login = () => {
   const handleChange = (e) => {
     setData({ ...data, [e.target.name]: e.target.value });
   };
-  // console.log(data);
 
   const handleSubmit = (e) => {
     e.preventDefault();
