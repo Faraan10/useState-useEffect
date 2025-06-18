@@ -10,6 +10,11 @@ const Register = () => {
   // console.log(data);
 
   const { name, email, password } = data;
+
+  const handleChange = (e) => {
+    setData({ ...data, [e.target.name]: e.target.value });
+  };
+
   const handleSubmit = (e) => {
     e.preventDefault();
 
@@ -17,11 +22,13 @@ const Register = () => {
       return false;
     }
     console.log(data);
+    setData({
+      name: "",
+      email: "",
+      password: "",
+    });
   };
 
-  const handleChange = (e) => {
-    setData({ ...data, [e.target.name]: e.target.value });
-  };
   return (
     <div className="min-h-screen flex items-center justify-center bg-base-200">
       <div className="w-full max-w-md p-8 space-y-6 bg-base-100 rounded-2xl shadow-lg">
