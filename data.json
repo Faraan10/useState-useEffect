@@ -28,7 +28,8 @@
     "title": "Fitness Tracker",
     "image": "https://tidbits.com/uploads/2022/02/Activity-vs-Athlytic.jpeg",
     "price": 650.99,
-    "quantity": 1
+    "quantity": 1,
+    "stock": 10
   },
   {
     "id": 5,
