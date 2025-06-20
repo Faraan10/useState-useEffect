@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 
-const Navbar = ({ cart }) => {
+const Navbar = ({ cart, total }) => {
   return (
     <div className="navbar container bg-base-100 shadow-sm">
       <div className="flex-1">
@@ -38,7 +38,7 @@ const Navbar = ({ cart }) => {
           >
             <div className="card-body">
               <span className="text-lg font-bold">{cart.length} Items</span>
-              <span className="text-info">Subtotal: $999</span>
+              <span className="text-info">Subtotal: ${total}</span>
               <div className="card-actions">
                 <Link to="/cart">
                   <button className="btn btn-primary btn-block">
