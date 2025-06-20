@@ -1,10 +1,10 @@
 import { Outlet } from "react-router-dom";
 import Navbar from "../components/Navbar";
 
-const MainLayout = ({ cart }) => {
+const MainLayout = ({ cart, total }) => {
   return (
     <>
-      <Navbar cart={cart} />
+      <Navbar cart={cart} total={total} />
       <main>
         <Outlet />
       </main>
