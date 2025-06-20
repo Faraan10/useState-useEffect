@@ -1,6 +1,4 @@
-const Cart = ({ cart, deleteCart }) => {
-  const total = cart.reduce((sum, item) => sum + item.price * item.quantity, 0);
-
+const Cart = ({ cart, total, deleteCart }) => {
   return (
     <div className="min-h-screen bg-base-200 py-10 px-4">
       <h2 className="text-3xl font-bold mb-6 text-center">
