@@ -42,6 +42,7 @@ const App = () => {
     toast.success("Item added to cart");
   };
   // console.log(cart);
+  const total = cart.reduce((sum, item) => sum + item.price * item.quantity, 0);
 
   const deleteCart = (id) => {
     setCart((prevItems) => prevItems.filter((item) => item.id != id));
@@ -52,7 +53,7 @@ const App = () => {
     <>
       <BrowserRouter>
         <Routes>
-          <Route element={<MainLayout cart={cart} />}>
+          <Route element={<MainLayout cart={cart} total={total} />}>
             <Route path="/" element={<Home />} />
             <Route
               path="/products"
@@ -60,7 +61,9 @@ const App = () => {
             />
             <Route
               path="/cart"
-              element={<Cart cart={cart} deleteCart={deleteCart} />}
+              element={
+                <Cart cart={cart} total={total} deleteCart={deleteCart} />
+              }
             />
             <Route path="*" element={<NotFound />} />
           </Route>
