@@ -21,7 +21,6 @@ const Navbar = ({ cart, total }) => {
         <Link className="btn btn-ghost text-md" to="/about">
           About
         </Link>
-
         {/* Cart Dropdown */}
         <div className="dropdown dropdown-end">
           <div tabIndex={0} role="button" className="btn btn-ghost btn-circle">
