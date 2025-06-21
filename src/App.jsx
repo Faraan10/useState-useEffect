@@ -66,6 +66,7 @@ const App = () => {
                 <Cart cart={cart} total={total} deleteCart={deleteCart} />
               }
             />
+            <Route path="/about" element={<About />} />
             <Route path="*" element={<NotFound />} />
           </Route>
 
