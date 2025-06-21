@@ -6,6 +6,7 @@ import {
   Login,
   Products,
   Cart,
+  About,
   Settings,
   NotFound,
 } from "./pages/index";
