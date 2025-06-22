@@ -1,3 +1,5 @@
+import React from "react";
+
 import { FiSettings, FiUser, FiLogOut, FiHome } from "react-icons/fi";
 
 const DashBoard = () => {
