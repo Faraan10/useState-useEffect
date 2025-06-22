@@ -1,3 +1,5 @@
+import React from "react";
+
 const Products = ({ items, addItems }) => {
   return (
     <div className="min-h-screen bg-base-200 py-10 px-4">
