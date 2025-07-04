@@ -42,7 +42,6 @@ const App = () => {
     setCart((prevItems) => [...prevItems, newData]);
     toast.success("Item added to cart");
   };
-  // console.log(cart);
   const total = cart.reduce((sum, item) => sum + item.price * item.quantity, 0);
 
   const deleteCart = (id) => {
