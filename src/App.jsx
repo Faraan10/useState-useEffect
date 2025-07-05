@@ -23,7 +23,6 @@ const App = () => {
   const [data, setData] = useState(null);
   const [items, setItems] = useState(demoData);
   const [cart, setCart] = useState([]);
-  // console.log(demoData);
 
   useEffect(() => {
     let token = localStorage.getItem("token");
