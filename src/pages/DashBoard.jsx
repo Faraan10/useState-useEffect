@@ -5,7 +5,7 @@ import { FiSettings, FiUser, FiLogOut, FiHome } from "react-icons/fi";
 const DashBoard = () => {
   return (
     <div className="min-h-screen flex bg-base-200">
-      {/* Sidebar */}
+      {/* Sidebar below */}
       <div className="w-64 bg-base-100 shadow-lg p-4 hidden md:block">
         <h2 className="text-2xl font-bold text-primary mb-6">My Dashboard</h2>
         <ul className="menu space-y-2">
