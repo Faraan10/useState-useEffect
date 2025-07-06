@@ -11,7 +11,7 @@ const Home = () => {
           alt="Shopping"
         />
 
-        {/* Text Section */}
+        {/* Text Section below*/}
         <div className="text-center lg:text-left">
           <h1 className="text-5xl font-bold text-primary mb-4">
             Your Favorite Products Delivered Fast
