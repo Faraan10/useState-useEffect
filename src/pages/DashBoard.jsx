@@ -36,11 +36,11 @@ const DashBoard = () => {
         </ul>
       </div>
 
-      {/* Main Content below*/}
+      {/* Main Content below */}
       <div className="flex-1 p-6">
         <h1 className="text-3xl font-bold mb-4">Welcome to your Dashboard</h1>
 
-        {/* Example Cards below*/}
+        {/* Example Cards below */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           <div className="card bg-base-100 shadow-xl">
             <div className="card-body">
