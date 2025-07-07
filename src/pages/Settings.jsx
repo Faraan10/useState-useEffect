@@ -31,7 +31,6 @@ const Settings = () => {
             />
           </div>
 
-          {/* Password */}
           <div className="form-control">
             <label className="label">
               <span className="label-text">New Password</span>
