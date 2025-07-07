@@ -7,7 +7,6 @@ const Register = () => {
     email: "",
     password: "",
   });
-  // console.log(data);
 
   const { name, email, password } = data;
 
