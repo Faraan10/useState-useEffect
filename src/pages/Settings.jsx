@@ -42,7 +42,6 @@ const Settings = () => {
             />
           </div>
 
-          {/* Theme Toggle (optional) */}
           <div className="form-control flex flex-row items-center gap-4">
             <label className="label cursor-pointer">
               <span className="label-text">Enable Dark Mode</span>
