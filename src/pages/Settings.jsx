@@ -49,7 +49,6 @@ const Settings = () => {
             <input type="checkbox" className="toggle toggle-primary" />
           </div>
 
-          {/* Save Changes */}
           <div className="form-control mt-6">
             <button className="btn btn-primary w-full">Save Changes</button>
           </div>
