@@ -9,7 +9,6 @@ const Settings = () => {
         </h2>
 
         <form className="space-y-4">
-          {/* Name */}
           <div className="form-control">
             <label className="label">
               <span className="label-text">Full Name</span>
