@@ -7,7 +7,7 @@ const Cart = ({ cart, total, deleteCart }) => {
 
       {cart.length === 0 ? (
         <div className="text-center text-lg text-base-content">
-          Your cart is empty.
+          Your cart is empty
         </div>
       ) : (
         <div className="max-w-4xl mx-auto space-y-6">
