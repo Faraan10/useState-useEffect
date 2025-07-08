@@ -1,5 +1,9 @@
 const AvatarDropdown = () => {
-  return <div>AvatarDropdown</div>;
+  return (
+    <div>
+      <h2>vatarDropdown</h2>
+    </div>
+  );
 };
 
 export default AvatarDropdown;
